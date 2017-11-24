@@ -1,0 +1,18 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" rel="stylesheet" type="text/css" media="all">
+<script src=Assets/w3data.js></script>
+<script src=Assets/data.js></script>
+<h2>Latest Releases</h2>
+      <div id=lts>
+        <div id=innerwrapper>
+          <div id=grid w3-repeat=current>
+          <a href="Series/{{WatchLink}}/{{Latest}}.html">
+            <div><img id=thumb src="{{ImgUrl}}"></div>
+            <div>{{Name}} Episode {{Latest}}</div>
+          </a>
+        </div>
+        </div>
+      </div>
+      <script>
+  w3DisplayData("lts",series);
+  </script>
