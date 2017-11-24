@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bayi Subs are the nexus of premium quality Chinese anime fansubs">
+    <meta name="keywords" content="anime, fansub, fansubs, chinese, donghua, guoman, manhua, manga, subs, subtitles">
+    <link rel="icon" type="image/x-icon" href="../../imagens/favicon.ico">
+    <title>Bayi Subs - Chinese Anime Fansubs!</title>
+    <link href="../../style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../../Assets/w3data.js"></script>
+    <script src="../../Assets/series.js"></script>
+  </head>
+  
+  <body>
+
+    <h2 id=nm><a href="index.html">{{Name}}</a></h2>
+    <p id=plt>Synopsis:{{Plot}}</p>
+    <ol id=ep>
+      <li w3-repeat=episodes><a href="{{Number}}.html">Episode {{Number}}</a></li>
+    </ol>
+  <script>w3DisplayData("nm",bloodivores);w3DisplayData("plt",bloodivores);w3DisplayData("ep",bloodivores);</script>
+  </body>
+</html>

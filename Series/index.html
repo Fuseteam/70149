@@ -1,0 +1,24 @@
+<!doctype html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../style.css" rel="stylesheet" type="text/css" media="all">
+<script src="../Assets/w3data.js"></script>
+<script src="../Assets/data.js"></script>
+  <h2>Current Donghua</h2>
+    <ul id="crd" style="list-style-type:circle">
+      <li w3-repeat=current><a href="{{WatchLink}}">{{Name}}</a></li>
+    </ul>
+    
+    <h2>On-Hold Donghua</h2> <!-- Bayi never drops anything, pace is just gentler :)-->
+    <ul id="ohd" style="list-style-type:disc">
+      <li w3-repeat=onhold><a href="{{WatchLink}}">{{Name}}</a></li>
+    </ul>
+    <h2>Completed Donghua</h2>
+    <ul id="cmd" style="list-style-type:square">
+      <li w3-repeat=completed><a href={{WatchLink}}>{{Name}}</a></li>
+    </ul>
+    
+  <script>
+    w3DisplayData("crd", series);
+    w3DisplayData("ohd", series);
+    w3DisplayData("cmd", series);
+  </script>
